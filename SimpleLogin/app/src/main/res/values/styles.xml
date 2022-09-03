@@ -1,36 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your theme here. -->
-        <!--
-        <item name="colorPrimary">@color/color_m3_primary</item>
-        <item name="colorPrimaryDark">@color/color_m3_prim</item>
-        <item name="colorAccent">@color/color_m3_primary</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor">@color/colorItemBackground</item>
-        <item name="android:textColorPrimary">@color/color_m3_primary</item>
-        <item name="colorControlNormal">@color/colorControlNormal</item>
-        <item name="materialAlertDialogTheme">@style/SLMaterialAlertDialog</item>
-        <item name="android:navigationBarColor">@color/colorItemBackground</item>
-        !-->
-        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <!-- Status bar color. -->
-
-        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
-        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
-
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-
-        <item name="android:windowTranslucentStatus">false</item>
-        <item name="android:windowTranslucentNavigation">false</item>
-    </style>
-
-    <style name="HomeActivityTheme" parent="AppTheme">
-        <item name="android:windowTranslucentStatus">false</item>
-    </style>
-
     <style name="MaterialButtonTextAppearance">
         <item name="fontFamily">@font/google_sans_regular</item>
     </style>

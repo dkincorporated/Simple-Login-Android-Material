@@ -93,8 +93,8 @@ class AliasListFragment : BaseFragment(), Toolbar.OnMenuItemClickListener,
     }
 
     private fun setLoading(loading: Boolean) {
-        binding.rootConstraintLayout.isEnabled = !loading
-        binding.progressBar.visibility = if (loading) View.VISIBLE else View.GONE
+        // binding.rootConstraintLayout.isEnabled = !loading
+        // binding.progressBar.visibility = if (loading) View.VISIBLE else View.GONE
     }
 
     private fun showLoadingFooter(showing: Boolean) {

@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:maxLines="2"
-                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:fontFamily="@font/google_sans_regular"
                 android:textColor="@color/colorWhite"
                 tools:text="John Doe" />
 
