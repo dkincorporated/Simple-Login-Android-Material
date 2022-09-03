@@ -50,7 +50,7 @@
                 app:tabIndicatorFullWidth="false"
                 app:tabTextAppearance="@style/TabText"
                 app:tabTextColor="@color/colorControlNormal"
-                app:tabSelectedTextColor="@color/colorPrimary">
+                app:tabSelectedTextColor="@color/color_m3_primary">
 
                 <com.google.android.material.tabs.TabItem
                     android:id="@+id/allTabItem"
@@ -115,7 +115,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|end"
                     android:layout_margin="24dp"
-                    android:backgroundTint="@color/colorPrimary"
+                    android:backgroundTint="@color/color_m3_primary"
                     app:srcCompat="@drawable/ic_arrow_upward_24dp"
                     app:tint="@color/colorWhite"
                     tools:ignore="ContentDescription" />

@@ -62,7 +62,7 @@
                     android:text="Modify"
                     android:fontFamily="@font/google_sans_text_regular"
                     android:textAppearance="?attr/textAppearanceSubtitle2"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/color_m3_primary"
                     tools:ignore="HardcodedText" />
 
             </LinearLayout>

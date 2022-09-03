@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/do_not_change_api_url"
                 android:textAlignment="center"
-                android:textColor="@color/colorNegative" />
+                android:textColor="@color/color_m3_error" />
 
             <TextView
                 android:layout_width="match_parent"

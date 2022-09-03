@@ -50,7 +50,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawableEnd="@drawable/ic_close_fill_21dp"
-                            app:drawableTint="@color/colorPrimary"
+                            app:drawableTint="@color/color_m3_primary"
                             android:inputType="textEmailAddress"
                             android:textColor="@color/colorText" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -62,7 +62,7 @@
                         android:layout_height="wrap_content"
                         android:hint="Password"
                         app:endIconMode="password_toggle"
-                        app:endIconTint="@color/colorPrimary"
+                        app:endIconTint="@color/color_m3_primary"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText">
 
@@ -81,7 +81,7 @@
                         android:layout_marginTop="24dp"
                         android:elevation="0dp"
                         android:text="Sign in"
-                        android:background="@color/colorPrimary"
+                        android:background="@color/color_m3_primary"
                         android:textColor="@color/colorWhite"
 
                         tools:ignore="HardcodedText" />
@@ -199,10 +199,10 @@
                     android:drawablePadding="5dp"
                     android:text="About Us"
                     android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/color_m3_primary"
                     android:textStyle="bold"
                     app:drawableStartCompat="@drawable/ic_about_24dp"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="@color/color_m3_primary"
                     tools:ignore="HardcodedText" />
 
             </LinearLayout>

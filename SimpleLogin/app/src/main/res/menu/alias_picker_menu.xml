@@ -6,7 +6,7 @@
         android:id="@+id/searchMenuItem"
         android:icon="@drawable/ic_search_24dp"
         android:title="Search"
-        app:iconTint="@color/colorPrimary"
+        app:iconTint="@color/color_m3_primary"
         app:showAsAction="ifRoom"
         tools:ignore="HardcodedText" />
 </menu>

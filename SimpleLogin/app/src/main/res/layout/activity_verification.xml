@@ -134,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textAppearance="?attr/textAppearanceHeadline6"
-                android:textColor="@color/colorNegative"
+                android:textColor="@color/color_m3_error"
                 tools:text="Error message" />
 
             <View

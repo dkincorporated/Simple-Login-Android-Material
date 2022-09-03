@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Note that the reverse-alias can only be used by you which means you have to send email to the reverse-alias ONLY from the email that you register with SimpleLogin."
-                android:textColor="@color/colorNegative"
+                android:textColor="@color/color_m3_error"
                 tools:ignore="HardcodedText" />
         </LinearLayout>
 

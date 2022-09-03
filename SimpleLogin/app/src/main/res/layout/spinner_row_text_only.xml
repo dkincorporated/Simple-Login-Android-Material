@@ -6,5 +6,5 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     android:textAppearance="?attr/textAppearanceBody1"
-    android:textColor="@color/colorPrimary"
+    android:textColor="@color/color_m3_primary"
     tools:text="Sample text" />

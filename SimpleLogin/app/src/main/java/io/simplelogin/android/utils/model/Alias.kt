@@ -145,7 +145,7 @@ data class AliasArray(
 )
 
 fun List<AliasMailbox>.toSpannableString(context: Context): Spannable {
-    val primaryColor = ContextCompat.getColor(context, R.color.colorPrimary)
+    val primaryColor = ContextCompat.getColor(context, R.color.color_m3_primary)
     val blackColor = ContextCompat.getColor(context, R.color.colorText)
     val spannableString = SpannableStringBuilder()
 

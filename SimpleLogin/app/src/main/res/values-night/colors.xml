@@ -9,4 +9,36 @@
     <color name="rippleColor">#4D4D4D</color>
     <color name="dividerColor">#5F6267</color>
     <color name="switchTrackColor">#606165</color>
+
+    <!-- Official M3 colours, because Google didn't include them properly !-->
+    <color name="m3_error_container">#ff8c1d18</color>
+    <color name="m3_on_error_container">#fff2b8b5</color>
+
+    <color name="color_m3_primary">#D0BCFF</color>
+    <color name="color_m3_primary_container">#4F378B</color>
+    <color name="color_m3_secondary">#CCC2DC</color>
+    <color name="color_m3_secondary_container">#4A4458</color>
+    <color name="color_m3_tertiary">#EFB8C8</color>
+    <color name="color_m3_tertiary_container">#633B48</color>
+
+    <color name="color_m3_surface">#1C1B1F</color>
+    <color name="color_m3_surface_variant">#49454F</color>
+    <color name="color_m3_background">#1C1B1F</color>
+    <color name="color_m3_error">#F2B8B5</color>
+    <color name="color_m3_error_container">#8C1D18</color>
+
+    <color name="color_m3_on_primary">#371E73</color>
+    <color name="color_m3_on_primary_container">#EADDFF</color>
+    <color name="color_m3_on_secondary">#332D41</color>
+    <color name="color_m3_on_secondary_container">#E8DEF8</color>
+    <color name="color_m3_on_tertiary">#492532</color>
+    <color name="color_m3_on_tertiary_container">#FFD8E4</color>
+
+    <color name="color_m3_on_surface">#E6E1E5</color>
+    <color name="color_m3_on_surface_variant">#CAC4D0</color>
+    <color name="color_m3_on_error">#601410</color>
+    <color name="color_m3_on_error_container">#F9DEDC</color>
+    <color name="color_m3_on_background">#E6E1E5</color>
+
+    <color name="color_m3_background_global">#1b1b1b</color>
 </resources>

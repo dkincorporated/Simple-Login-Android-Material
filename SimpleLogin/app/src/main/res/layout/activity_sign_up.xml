@@ -87,7 +87,7 @@
                 android:paddingEnd="@dimen/margin_15"
                 android:hint="Password"
                 app:endIconMode="password_toggle"
-                app:endIconTint="@color/colorPrimary"
+                app:endIconTint="@color/color_m3_primary"
                 tools:ignore="HardcodedText">
 
                 <com.google.android.material.textfield.TextInputEditText

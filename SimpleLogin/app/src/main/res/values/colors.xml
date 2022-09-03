@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--
     <color name="colorPrimary">#EE307C</color>
     <color name="colorPrimaryDark">@color/colorLightGray</color>
     <color name="colorAccent">#BE1E2D</color>
     <color name="colorNegative">#FF3B30</color>
+        !-->
     <color name="colorGoogle">#C13424</color>
     <color name="colorFacebook">#2D4374</color>
     <color name="colorLightGray">#F7F7F7</color>
@@ -20,4 +22,36 @@
     <color name="dividerColor">#DBDCE0</color>
     <color name="switchTrackColor">#C0C1C3</color>
     <color name="protonMain">#6D4AFF</color>
+
+    <!-- Official M3 colours, because Google didn't include them properly !-->
+    <color name="m3_error_container">#fff9dedc</color>
+    <color name="m3_on_error_container">#ff410e0b</color>
+
+    <color name="color_m3_primary">#6750A4</color>
+    <color name="color_m3_primary_container">#EADDFF</color>
+    <color name="color_m3_secondary">#625B71</color>
+    <color name="color_m3_secondary_container">#E8DEF8</color>
+    <color name="color_m3_tertiary">#7D5260</color>
+    <color name="color_m3_tertiary_container">#FFD8E4</color>
+
+    <color name="color_m3_surface">#FFFBFE</color>
+    <color name="color_m3_surface_variant">#E7E0EC</color>
+    <color name="color_m3_background">#FFFBFE</color>
+    <color name="color_m3_error">#B3261E</color>
+    <color name="color_m3_error_container">#F9DEDC</color>
+
+    <color name="color_m3_on_primary">#FFFFFF</color>
+    <color name="color_m3_on_primary_container">#21005E</color>
+    <color name="color_m3_on_secondary">#FFFFFF</color>
+    <color name="color_m3_on_secondary_container">#1E192B</color>
+    <color name="color_m3_on_tertiary">#FFFFFF</color>
+    <color name="color_m3_on_tertiary_container">#370B1E</color>
+
+    <color name="color_m3_on_surface">#1C1B1F</color>
+    <color name="color_m3_on_surface_variant">#49454E</color>
+    <color name="color_m3_on_error">#FFFFFF</color>
+    <color name="color_m3_on_error_container">#370B1E</color>
+    <color name="color_m3_on_background">#1C1B1F</color>
+
+    <color name="color_m3_background_global">#fbfbfb</color>
 </resources>

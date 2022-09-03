@@ -31,9 +31,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/margin_4"
-                        android:textAppearance="?attr/textAppearanceSubtitle2"
+                        android:textAppearance="@style/AliasListTitleAppearance"
                         android:textColor="@color/colorText"
-                        android:textSize="15.5sp"
                         tools:text="email@example.com" />
 
                     <TextView
@@ -45,6 +44,7 @@
                         app:drawableTint="?attr/colorControlNormal"
                         android:paddingTop="5dp"
                         android:textColor="?attr/colorControlNormal"
+                        android:textAppearance="@style/AliasListSubtextAppearance"
                         tools:text="18 Mar 2020 at 22:03 (1 day ago)" />
 
                 </LinearLayout>

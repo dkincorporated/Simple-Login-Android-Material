@@ -8,21 +8,17 @@
             style="@style/Widget.Material3.CardView.Outlined"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="5dp"
-            android:padding="@dimen/margin_4">
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="4dp"
+            app:cardCornerRadius="8dp">
 
             <RelativeLayout
                 android:id="@+id/rootRelativeLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorItemBackground"
                 android:orientation="horizontal"
-                android:paddingStart="10dp"
-                android:paddingTop="10dp"
-                android:paddingEnd="10dp">
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="16dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -34,15 +30,32 @@
                     android:layout_toStartOf="@+id/arrowImageView"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/emailTextView"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin_4"
-                        android:fontFamily="@font/google_sans_regular"
-                        android:textColor="@color/colorText"
-                        android:textSize="20sp"
-                        tools:text="yautiden@gmail.com" />
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/emailTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_4"
+                            android:fontFamily="@font/google_sans_regular"
+                            android:textColor="@color/colorText"
+                            android:textSize="18sp"
+                            android:layout_weight="1"
+                            tools:text="yautiden@gmail.com" />
+
+                        <com.google.android.material.materialswitch.MaterialSwitch
+                            android:id="@+id/enabledSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true" />
+
+                    </LinearLayout>
+
+
 
                     <TextView
                         android:id="@+id/creationDateTextView"
@@ -53,7 +66,6 @@
                         android:paddingTop="5dp"
                         android:textAppearance="@style/AliasListSubtextAppearance"
                         android:textColor="?attr/colorControlNormal"
-                        android:textSize="16sp"
                         app:drawableStartCompat="@drawable/ic_clock_16dp"
                         app:drawableTint="?attr/colorControlNormal"
                         tools:text="Created 3 days ago" />
@@ -110,9 +122,8 @@
                         android:ellipsize="end"
                         android:maxLines="2"
                         android:paddingTop="5dp"
-                        android:textAppearance="?attr/textAppearanceBody2"
+                        android:textAppearance="@style/AliasListSubtextAppearance"
                         android:textColor="@color/colorText"
-                        android:textSize="15sp"
                         tools:text="Alias note" />
 
                     <LinearLayout
@@ -121,23 +132,13 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <com.google.android.material.materialswitch.MaterialSwitch
-                            android:id="@+id/enabledSwitch"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:checked="true" />
-
-                        <Space
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1" />
-
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/copyButton"
-                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Copy"
+                            android:textAppearance="@style/MaterialButtonTextAppearance"
                             android:textAllCaps="false"
                             android:textSize="14sp"
                             app:icon="@drawable/ic_copy_24dp"
@@ -150,11 +151,11 @@
 
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/sendEmailButton"
-                            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="0dp"
                             android:text="Send Email"
+                            android:textAppearance="@style/MaterialButtonTextAppearance"
                             android:textAllCaps="false"
                             android:textSize="14sp"
                             app:icon="@drawable/ic_send_28dp"
@@ -170,6 +171,7 @@
                     android:layout_centerVertical="true"
                     android:src="@drawable/ic_next_16dp"
                     app:tint="?attr/colorControlNormal"
+                    android:visibility="gone"
                     tools:ignore="ContentDescription" />
 
             </RelativeLayout>

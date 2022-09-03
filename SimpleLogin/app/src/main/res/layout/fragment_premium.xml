@@ -52,7 +52,7 @@
                     android:gravity="center"
                     android:text="YOUR CURRENT SUPERPOWERS"
                     android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/color_m3_primary"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -110,7 +110,7 @@
                     android:paddingTop="20dp"
                     android:text="GO PREMIUM FOR MORE"
                     android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/color_m3_primary"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -121,7 +121,7 @@
                     android:text="Unlimited aliases"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
                     android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="@color/color_m3_primary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
@@ -133,7 +133,7 @@
                     android:text="Unlimited custom domains"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
                     android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="@color/color_m3_primary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
@@ -157,7 +157,7 @@
                     android:text="Catch-all (or wildcard) domain"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
                     android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="@color/color_m3_primary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
@@ -169,7 +169,7 @@
                     android:text="50 directories/usernames"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
                     android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="@color/color_m3_primary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
@@ -181,7 +181,7 @@
                     android:text="Unlimited mailboxes"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
                     android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="@color/color_m3_primary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
@@ -193,7 +193,7 @@
                     android:text="PGP Encryption"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
                     android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="@color/color_m3_primary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
@@ -212,7 +212,7 @@
                     android:paddingTop="20dp"
                     android:text="Yearly subscription $29.99/year"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/color_m3_primary"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -229,7 +229,7 @@
                     android:paddingTop="10dp"
                     android:text="Monthly subscription $2.99/month"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/color_m3_primary"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -271,7 +271,7 @@
                         android:paddingStart="4dp"
                         android:text="Term of Use"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/color_m3_primary"
                         tools:ignore="HardcodedText,RtlSymmetry" />
 
                     <TextView
@@ -290,7 +290,7 @@
                         android:paddingStart="4dp"
                         android:text="Privacy Policy"
                         android:textAppearance="?attr/textAppearanceCaption"
-                        android:textColor="@color/colorPrimary"
+                        android:textColor="@color/color_m3_primary"
                         tools:ignore="HardcodedText,RtlSymmetry" />
 
                 </LinearLayout>
@@ -309,7 +309,7 @@
                     android:paddingTop="20dp"
                     android:text="FOR ENTERPRISES"
                     android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/color_m3_primary"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -320,7 +320,7 @@
                     android:text="Dedicated server &amp; database"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
                     android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="@color/color_m3_primary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
@@ -332,7 +332,7 @@
                     android:text="Dashboard to manage team accounts"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
                     android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="@color/color_m3_primary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 
@@ -344,7 +344,7 @@
                     android:text="Single Sign-On (SAML or OAuth2)"
                     android:textAppearance="?attr/textAppearanceSubtitle1"
                     android:textColor="@color/colorText"
-                    app:drawableTint="@color/colorPrimary"
+                    app:drawableTint="@color/color_m3_primary"
                     tools:ignore="HardcodedText"
                     app:drawableStartCompat="@drawable/ic_check_mark_16dp" />
 

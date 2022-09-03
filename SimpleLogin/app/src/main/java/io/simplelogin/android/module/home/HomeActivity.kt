@@ -4,15 +4,20 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.graphics.Color
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.view.Gravity
 import android.view.MenuItem
 import android.view.View
+import android.view.WindowManager
+import android.view.WindowManager.*
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import androidx.core.view.GravityCompat
+import androidx.core.view.WindowCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavArgument
 import androidx.navigation.findNavController
@@ -56,6 +61,20 @@ class HomeActivity : BaseAppCompatActivity(), NavigationView.OnNavigationItemSel
         setUpDrawer()
         setContentView(binding.root)
         setNavigationGraph(viewModel.navigationGraph)
+
+        if (Build.VERSION.SDK_INT in 21..29) {
+            window.statusBarColor = Color.TRANSPARENT
+            window.clearFlags(LayoutParams.FLAG_TRANSLUCENT_STATUS)
+            window.addFlags(LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            // window.decorView.systemUiVisibility =
+            // View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+
+        } else if (Build.VERSION.SDK_INT >= 30) {
+            window.statusBarColor = Color.TRANSPARENT
+            window.navigationBarColor = Color.TRANSPARENT
+            // Making status bar overlaps with the activity
+            WindowCompat.setDecorFitsSystemWindows(window, false)
+        }
     }
 
     private fun setUpViewModel() {
