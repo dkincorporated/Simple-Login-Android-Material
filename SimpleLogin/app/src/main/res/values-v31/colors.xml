@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Official M3 colours, because Google didn't include them properly !-->
+    <color name="color_m3_primary">@color/material_dynamic_primary40</color>
+    <color name="color_m3_primary_container">@color/material_dynamic_primary90</color>
+    <color name="color_m3_secondary">@color/material_dynamic_secondary40</color>
+    <color name="color_m3_secondary_container">@color/material_dynamic_secondary90</color>
+    <color name="color_m3_tertiary">@color/material_dynamic_tertiary40</color>
+    <color name="color_m3_tertiary_container">@color/material_dynamic_tertiary90</color>
+
+    <color name="color_m3_surface">@color/material_dynamic_neutral99</color>
+    <color name="color_m3_surface_variant">@color/material_dynamic_neutral_variant99</color>
+    <color name="color_m3_background">@color/material_dynamic_neutral99</color>
+    <color name="color_m3_error">#B3261E</color>
+    <color name="color_m3_error_container">#F9DEDC</color>
+
+    <color name="color_m3_on_primary">@color/material_dynamic_primary100</color>
+    <color name="color_m3_on_primary_container">@color/material_dynamic_primary10</color>
+    <color name="color_m3_on_secondary">@color/material_dynamic_secondary100</color>
+    <color name="color_m3_on_secondary_container">@color/material_dynamic_secondary10</color>
+    <color name="color_m3_on_tertiary">@color/material_dynamic_tertiary100</color>
+    <color name="color_m3_on_tertiary_container">@color/material_dynamic_tertiary10</color>
+
+    <color name="color_m3_on_surface">@color/material_dynamic_neutral10</color>
+    <color name="color_m3_on_surface_variant">@color/material_dynamic_neutral_variant30</color>
+    <color name="color_m3_on_error">#FFFFFF</color>
+    <color name="color_m3_on_error_container">#370B1E</color>
+    <color name="color_m3_on_background">@color/material_dynamic_neutral10</color>
+
+    <color name="color_m3_background_global">@color/material_dynamic_neutral_variant99</color>
+</resources>

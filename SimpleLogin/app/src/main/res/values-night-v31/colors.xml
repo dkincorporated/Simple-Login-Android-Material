@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Official M3 colours, because Google didn't include them properly !-->
+    <color name="color_m3_primary">@color/material_dynamic_primary80</color>
+    <color name="color_m3_primary_container">@color/material_dynamic_primary30</color>
+    <color name="color_m3_secondary">@color/material_dynamic_secondary80</color>
+    <color name="color_m3_secondary_container">@color/material_dynamic_secondary30</color>
+    <color name="color_m3_tertiary">@color/material_dynamic_tertiary80</color>
+    <color name="color_m3_tertiary_container">@color/material_dynamic_tertiary30</color>
+
+    <color name="color_m3_surface">@color/material_dynamic_neutral10</color>
+    <color name="color_m3_surface_variant">@color/material_dynamic_neutral_variant30</color>
+    <color name="color_m3_background">@color/material_dynamic_neutral10</color>
+    <color name="color_m3_error">#F2B8B5</color>
+    <color name="color_m3_error_container">#8C1D18</color>
+
+    <color name="color_m3_on_primary">@color/material_dynamic_primary20</color>
+    <color name="color_m3_on_primary_container">@color/material_dynamic_primary90</color>
+    <color name="color_m3_on_secondary">@color/material_dynamic_secondary20</color>
+    <color name="color_m3_on_secondary_container">@color/material_dynamic_secondary90</color>
+    <color name="color_m3_on_tertiary">@color/material_dynamic_tertiary20</color>
+    <color name="color_m3_on_tertiary_container">@color/material_dynamic_tertiary90</color>
+
+    <color name="color_m3_on_surface">@color/material_dynamic_neutral90</color>
+    <color name="color_m3_on_surface_variant">@color/material_dynamic_neutral_variant80</color>
+    <color name="color_m3_on_error">#601410</color>
+    <color name="color_m3_on_error_container">#F9DEDC</color>
+    <color name="color_m3_on_background">@color/material_dynamic_neutral90</color>
+
+    <color name="color_m3_background_global">@color/material_dynamic_neutral_variant10</color>
+</resources>

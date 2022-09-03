@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-        <RelativeLayout
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/rootCardView"
+            style="@style/Widget.Material3.CardView.Outlined"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="5dp"
-            android:padding="@dimen/margin_4"
-            android:background="@drawable/card_shape_with_ripple">
+            android:padding="@dimen/margin_4">
 
             <RelativeLayout
                 android:id="@+id/rootRelativeLayout"
@@ -39,72 +39,69 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/margin_4"
-                        android:textAppearance="?attr/textAppearanceSubtitle2"
+                        android:fontFamily="@font/google_sans_regular"
                         android:textColor="@color/colorText"
-                        tools:text="yautiden@gmail.com"
-                        android:textSize="16sp"/>
+                        android:textSize="20sp"
+                        tools:text="yautiden@gmail.com" />
 
                     <TextView
                         android:id="@+id/creationDateTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:drawableStartCompat="@drawable/ic_clock_16dp"
                         android:drawablePadding="5dp"
                         android:gravity="center_vertical"
                         android:paddingTop="5dp"
-                        android:textAppearance="?attr/textAppearanceCaption"
+                        android:textAppearance="@style/AliasListSubtextAppearance"
                         android:textColor="?attr/colorControlNormal"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_clock_16dp"
                         app:drawableTint="?attr/colorControlNormal"
-                        tools:text="Created 3 days ago"
-                        android:textSize="14sp"/>
+                        tools:text="Created 3 days ago" />
 
                     <TextView
                         android:id="@+id/countsTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
-                        app:drawableStartCompat="@drawable/ic_wave_16dp"
                         android:drawablePadding="5dp"
                         android:gravity="center_vertical"
                         android:maxLines="1"
                         android:paddingTop="5dp"
-                        android:textAppearance="?attr/textAppearanceCaption"
+                        android:textAppearance="@style/AliasListSubtextAppearance"
                         android:textColor="?attr/colorControlNormal"
-                        app:drawableTint="?attr/colorControlNormal"
                         app:autoSizeMinTextSize="9sp"
                         app:autoSizeStepGranularity="2sp"
                         app:autoSizeTextType="uniform"
-                        tools:text="0 forward, 0 block, 1 reply"
-                        android:textSize="14sp"/>
+                        app:drawableStartCompat="@drawable/ic_wave_16dp"
+                        app:drawableTint="?attr/colorControlNormal"
+                        tools:text="0 forward, 0 block, 1 reply" />
 
                     <TextView
                         android:id="@+id/mailboxesTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:drawableStartCompat="@drawable/ic_tray_16dp"
                         android:drawablePadding="5dp"
                         android:gravity="center_vertical"
                         android:maxLines="3"
                         android:paddingTop="5dp"
-                        android:textAppearance="?attr/textAppearanceCaption"
+                        android:textAppearance="@style/AliasListSubtextAppearance"
                         android:textColor="?attr/colorControlNormal"
+                        app:drawableStartCompat="@drawable/ic_tray_16dp"
                         app:drawableTint="?attr/colorControlNormal"
-                        tools:text="email@example.com"
-                        android:textSize="14sp"/>
+                        tools:text="email@example.com" />
 
                     <TextView
                         android:id="@+id/nameTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:drawableStartCompat="@drawable/ic_name_16dp"
                         android:drawablePadding="5dp"
                         android:gravity="center_vertical"
                         android:paddingTop="5dp"
-                        android:textAppearance="?attr/textAppearanceCaption"
+                        android:textAppearance="@style/AliasListSubtextAppearance"
                         android:textColor="?attr/colorControlNormal"
+                        app:drawableStartCompat="@drawable/ic_name_16dp"
                         app:drawableTint="?attr/colorControlNormal"
-                        tools:text="John Doe"
-                        android:textSize="14sp"/>
+                        tools:text="John Doe" />
 
                     <TextView
                         android:id="@+id/noteTextView"
@@ -115,8 +112,8 @@
                         android:paddingTop="5dp"
                         android:textAppearance="?attr/textAppearanceBody2"
                         android:textColor="@color/colorText"
-                        tools:text="Alias note"
-                        android:textSize="15sp"/>
+                        android:textSize="15sp"
+                        tools:text="Alias note" />
 
                     <LinearLayout
                         android:id="@+id/actionsLinearLayout"
@@ -124,20 +121,16 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <androidx.appcompat.widget.SwitchCompat
+                        <com.google.android.material.materialswitch.MaterialSwitch
                             android:id="@+id/enabledSwitch"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:checked="true"
-                            android:thumb="@drawable/switch_thumb"
-                            app:thumbTintMode="screen"
-                            app:track="@drawable/switch_track"
-                            app:trackTint="@color/switch_track_color_state" />
+                            android:checked="true" />
 
                         <Space
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
 
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/copyButton"
@@ -145,15 +138,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Copy"
-                            android:textSize="14sp"
                             android:textAllCaps="false"
+                            android:textSize="14sp"
                             app:icon="@drawable/ic_copy_24dp"
                             tools:ignore="HardcodedText" />
 
                         <Space
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"/>
+                            android:layout_weight="1" />
 
                         <com.google.android.material.button.MaterialButton
                             android:id="@+id/sendEmailButton"
@@ -162,8 +155,8 @@
                             android:layout_height="wrap_content"
                             android:padding="0dp"
                             android:text="Send Email"
-                            android:textSize="14sp"
                             android:textAllCaps="false"
+                            android:textSize="14sp"
                             app:icon="@drawable/ic_send_28dp"
                             tools:ignore="HardcodedText" />
                     </LinearLayout>
@@ -180,6 +173,6 @@
                     tools:ignore="ContentDescription" />
 
             </RelativeLayout>
-        </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
 
 </layout>

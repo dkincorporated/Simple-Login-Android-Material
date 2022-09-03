@@ -27,6 +27,7 @@
                 android:text="Settings"
                 android:textColor="@color/colorText"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
+                android:fontFamily="@font/google_sans_regular"
                 tools:ignore="HardcodedText" />
 
         </com.google.android.material.appbar.MaterialToolbar>

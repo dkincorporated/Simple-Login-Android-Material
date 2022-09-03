@@ -8,8 +8,6 @@
         android:layout_width="54dp"
         android:layout_height="54dp"
         android:layout_gravity="center"
-        android:foreground="@drawable/shape_oval_outline_primary_color"
-        app:cardBackgroundColor="@android:color/transparent"
         app:cardCornerRadius="26dp">
 
         <ImageView
@@ -18,6 +16,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
+            android:padding="8dp"
             android:src="@drawable/ic_user_48dp"
             tools:ignore="ContentDescription" />
 

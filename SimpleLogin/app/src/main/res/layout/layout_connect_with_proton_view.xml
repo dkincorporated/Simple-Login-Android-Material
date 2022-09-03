@@ -23,6 +23,9 @@
             android:drawableStart="@drawable/ic_proton"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
+            android:fontFamily="@font/google_sans_regular"
+            android:textSize="16sp"
+            android:textAllCaps="false"
             android:text="@string/proton_link_account" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -37,6 +40,9 @@
             android:drawableStart="@drawable/ic_proton"
             android:paddingStart="20dp"
             android:paddingEnd="20dp"
+            android:fontFamily="@font/google_sans_regular"
+            android:textSize="16sp"
+            android:textAllCaps="false"
             android:visibility="gone"
             android:text="@string/proton_unlink_account"/>
 
@@ -44,6 +50,7 @@
             android:id="@+id/connectWithProtonInfoText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAppearance="@style/SettingsListTitleSubtextAppearance"
             android:text="@string/connect_with_proton_info_text"
             android:paddingTop="8dp" />
 

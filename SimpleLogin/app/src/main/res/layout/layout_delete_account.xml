@@ -24,13 +24,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Account Deletion"
-                android:textAppearance="?attr/textAppearanceSubtitle2"
+                android:textAppearance="@style/SettingsListTitleTextAppearance"
                 android:textColor="@color/colorText"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAppearance="@style/SettingsListTitleSubtextAppearance"
                 android:text="If SimpleLogin isn't the right fit for you, you can simply delete your account."
                 tools:ignore="HardcodedText" />
 
@@ -42,8 +43,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:text="DELETE ACCOUNT"
-            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:text="Delete\naccount"
+            android:textSize="16sp"
+            android:fontFamily="@font/google_sans_bold"
             android:textColor="@android:color/holo_red_light"
             tools:ignore="HardcodedText" />
     </RelativeLayout>

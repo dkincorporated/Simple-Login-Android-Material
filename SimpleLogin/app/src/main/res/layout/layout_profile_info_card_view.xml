@@ -40,6 +40,7 @@
                         android:paddingBottom="5dp"
                         android:textAppearance="?attr/textAppearanceSubtitle1"
                         android:textColor="@color/colorText"
+                        android:fontFamily="@font/google_sans_regular"
                         tools:text="John Doe" />
 
                     <TextView
@@ -47,6 +48,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAppearance="?attr/textAppearanceCaption"
+                        android:fontFamily="@font/google_sans_text_regular"
                         android:textColor="@color/colorControlNormal"
                         tools:text="email@example.com" />
 
@@ -57,7 +59,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="MODIFY"
+                    android:text="Modify"
+                    android:fontFamily="@font/google_sans_text_regular"
                     android:textAppearance="?attr/textAppearanceSubtitle2"
                     android:textColor="@color/colorPrimary"
                     tools:ignore="HardcodedText" />
@@ -72,31 +75,31 @@
                 android:alpha="0.1"
                 android:background="@color/colorText" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_separator_view"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/membership_text_view"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/first_separator_view"
-                android:orientation="horizontal"
-                android:padding="@dimen/card_view_padding">
+                android:layout_weight="1"
+                android:fontFamily="@font/google_sans_regular"
+                tools:text="Premium membership" />
 
-                <TextView
-                    android:id="@+id/membership_text_view"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textAppearance="?attr/textAppearanceBody2"
-                    tools:text="Premium membership" />
-
-                <TextView
-                    android:id="@+id/upgrade_text_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:text="UPGRADE"
-                    android:textAppearance="?attr/textAppearanceSubtitle2"
-                    android:textColor="@android:color/holo_blue_dark"
-                    tools:ignore="HardcodedText" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/upgrade_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="@font/google_sans_regular"
+                android:text="Upgrade"
+                android:textColor="@android:color/holo_blue_dark"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
 
         </RelativeLayout>
 </layout>
