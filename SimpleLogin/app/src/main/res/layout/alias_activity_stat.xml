@@ -1,60 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.Material3.CardView.Filled">
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/rootLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/shape_cornered_all_four_corners">
+        android:background="@color/color_m3_primary"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iconImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0.2"
+            app:tint="@color/colorWhite"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_send_48dp" />
 
         <LinearLayout
-            android:id="@+id/rootLinearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/color_m3_primary"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/iconImageView"
+            <TextView
+                android:id="@+id/numberTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:alpha="0.2"
-                app:tint="@color/colorWhite"
-                tools:ignore="ContentDescription"
-                tools:src="@drawable/ic_send_48dp" />
+                android:fontFamily="@font/google_sans_regular"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                tools:text="50" />
 
-            <LinearLayout
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/typeTextView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center|end"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/numberTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/colorWhite"
-                    tools:text="50" />
-
-                <TextView
-                    android:id="@+id/typeTextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:maxLines="1"
-                    app:autoSizeTextType="uniform"
-                    app:autoSizeMinTextSize="12sp"
-                    app:autoSizeStepGranularity="2sp"
-                    android:paddingTop="10dp"
-                    android:textAppearance="?attr/textAppearanceBody2"
-                    android:textColor="@color/colorWhite"
-                    tools:text="Email handled" />
-            </LinearLayout>
+                android:maxLines="1"
+                app:autoSizeTextType="uniform"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeStepGranularity="2sp"
+                android:fontFamily="@font/google_sans_text_regular"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                tools:text="Email handled" />
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 
-</layout>
+</com.google.android.material.card.MaterialCardView>

@@ -16,7 +16,6 @@
         <item name="colorControlNormal">@color/colorControlNormal</item>
         <item name="android:navigationBarColor">@color/colorItemBackground</item>
         !-->
-        <item name="materialAlertDialogTheme">@style/SLMaterialAlertDialog</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <!-- Status bar color. -->
 
@@ -28,6 +27,8 @@
 
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">false</item>
+
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
     </style>
 
     <!--
@@ -35,4 +36,13 @@
         <item name="android:windowTranslucentStatus">false</item>
     </style>
     !-->
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+        <item name="textAppearanceBodyLarge">@style/MaterialAlertDialog.App.Body.Text</item>
+        <item name="textAppearanceBodyMedium">@style/MaterialAlertDialog.App.Body.Text</item>
+        <item name="textAppearanceBodySmall">@style/MaterialAlertDialog.App.Body.Text</item>
+        <item name="buttonBarPositiveButtonStyle">@style/MadButtonBarPositive</item>
+        <item name="buttonBarNeutralButtonStyle">@style/MadButtonBarNeutral</item>
+    </style>
 </resources>

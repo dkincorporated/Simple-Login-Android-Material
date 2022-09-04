@@ -160,7 +160,7 @@ fun Activity.alertReversableOptions(reversable: Reversable, alias: Alias? = null
     val toString = "Email to \"${reversable.email}\""
     val fromString = if (alias != null) " from \"${alias.email}\"" else ""
 
-    MaterialAlertDialogBuilder(this, R.style.SlAlertDialogTheme)
+    MaterialAlertDialogBuilder(this)
         .setTitle(toString + fromString)
         .setItems(
             arrayOf(

@@ -32,9 +32,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_4"
-                    android:textAppearance="?attr/textAppearanceSubtitle2"
+                    android:textAppearance="@style/AliasListTitleAppearance"
                     android:textColor="@color/colorText"
-                    android:textSize="15.5sp"
                     tools:text="yautiden@gmail.com" />
 
                 <TextView
@@ -44,7 +43,7 @@
                     android:layout_gravity="center_vertical"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
-                    android:textAppearance="?attr/textAppearanceCaption"
+                    android:textAppearance="@style/AliasListSubtextAppearance"
                     android:textColor="?attr/colorControlNormal"
                     app:drawableStartCompat="@drawable/ic_clock_16dp"
                     app:drawableTint="?attr/colorControlNormal"
@@ -57,7 +56,7 @@
                     android:layout_gravity="center_vertical"
                     android:drawablePadding="5dp"
                     android:paddingTop="5dp"
-                    android:textAppearance="?attr/textAppearanceCaption"
+                    android:textAppearance="@style/AliasListSubtextAppearance"
                     android:textColor="?attr/colorControlNormal"
                     app:drawableStartCompat="@drawable/ic_send_16dp"
                     app:drawableTint="?attr/colorControlNormal"

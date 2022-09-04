@@ -2,11 +2,19 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <EditText
-        android:id="@+id/editText"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?attr/textAppearanceBody2"
-        android:textColor="@color/colorText"
-        tools:ignore="Autofill,LabelFor,TextFields" />
+        android:paddingHorizontal="16dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/colorText"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 </layout>

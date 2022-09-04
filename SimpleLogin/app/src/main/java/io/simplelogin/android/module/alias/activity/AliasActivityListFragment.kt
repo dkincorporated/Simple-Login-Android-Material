@@ -60,7 +60,7 @@ class AliasActivityListFragment : BaseFragment(), HomeActivity.OnBackPressed {
     }
 
     private fun setLoading(loading: Boolean) {
-        binding.rootConstraintLayout.isEnabled = !loading
+        // binding.rootConstraintLayout.isEnabled = !loading
         binding.progressBar.visibility = if (loading) View.VISIBLE else View.GONE
     }
 
@@ -137,7 +137,7 @@ class AliasActivityListFragment : BaseFragment(), HomeActivity.OnBackPressed {
 
                 override fun editNameButtonClicked() {
                     val dialogTextViewBinding = DialogViewEditTextBinding.inflate(layoutInflater)
-                    dialogTextViewBinding.editText.hint = "Ex: Jane Doe"
+                    dialogTextViewBinding.editText.hint = "e.g. Jane Doe"
                     dialogTextViewBinding.editText.setText(viewModel.alias.name)
                     val title = when (viewModel.alias.name) {
                         null -> "Add name for alias"
@@ -158,7 +158,7 @@ class AliasActivityListFragment : BaseFragment(), HomeActivity.OnBackPressed {
                 override fun editNoteButtonClicked() {
                     val dialogTextViewBinding = DialogViewEditTextBinding.inflate(layoutInflater)
                     dialogTextViewBinding.editText.hint =
-                        "Ex: For tech newsletters, online shopping..."
+                        "e.g. For tech newsletters, online shopping..."
                     dialogTextViewBinding.editText.setText(viewModel.alias.note)
                     val title = when (viewModel.alias.note) {
                         null -> "Add note for alias"

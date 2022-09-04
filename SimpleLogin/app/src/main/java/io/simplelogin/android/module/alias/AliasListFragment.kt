@@ -281,7 +281,7 @@ class AliasListFragment : BaseFragment(), Toolbar.OnMenuItemClickListener,
     }
 
     private fun showSelectRandomModeAlert() {
-        MaterialAlertDialogBuilder(requireContext(), R.style.SlAlertDialogTheme)
+        MaterialAlertDialogBuilder(requireContext())
             .setTitle("Randomly create an alias")
             .setItems(
                 arrayOf("By random words", "By UUID")
