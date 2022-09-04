@@ -3,8 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp">
+    android:layout_height="wrap_content"
+    android:layout_marginTop="48dp">
 
+    <!--
     <ImageView
         android:id="@+id/backgroundImageView"
         android:layout_width="match_parent"
@@ -12,59 +14,66 @@
         android:scaleType="fitXY"
         android:src="@drawable/violet_bg"
         tools:ignore="ContentDescription" />
+        !-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:orientation="horizontal"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp">
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
 
         <io.simplelogin.android.module.settings.view.AvatarView
             android:id="@+id/avatar_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical" />
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingStart="10dp"
             tools:ignore="RtlSymmetry">
 
             <TextView
                 android:id="@+id/usernameTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:maxLines="2"
                 android:fontFamily="@font/google_sans_regular"
-                android:textColor="@color/colorWhite"
+                android:maxLines="2"
+                android:textColor="@color/color_m3_primary"
+                android:textSize="20sp"
                 tools:text="John Doe" />
 
             <TextView
                 android:id="@+id/emailTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/google_sans_text_regular"
                 android:textAppearance="?attr/textAppearanceCaption"
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/color_m3_secondary"
+                android:textSize="16sp"
                 tools:text="email@example.com" />
 
             <TextView
                 android:id="@+id/membershipTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/google_sans_bold"
                 android:gravity="center_vertical"
-                android:textAppearance="?attr/textAppearanceSubtitle2"
+                android:textSize="16sp"
                 tools:text="Premium" />
         </LinearLayout>
 
     </LinearLayout>
 
+    <!--
     <View
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:background="@drawable/shape_toolbar_drop_shadow" />
+        !-->
 </RelativeLayout>

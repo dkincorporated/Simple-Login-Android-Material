@@ -311,7 +311,7 @@ class SettingsFragment : BaseFragment(), HomeActivity.OnBackPressed {
     }
 
     private fun setLoading(loading: Boolean) {
-        binding.rootConstraintLayout.isEnabled = !loading
+        // binding.rootConstraintLayout.isEnabled = !loading
         binding.progressBar.visibility = if (loading) VISIBLE else GONE
     }
 

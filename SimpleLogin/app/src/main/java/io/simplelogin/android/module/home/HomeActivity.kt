@@ -22,6 +22,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavArgument
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import com.google.android.material.color.DynamicColors
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.navigation.NavigationView
 import io.simplelogin.android.R
@@ -75,6 +76,8 @@ class HomeActivity : BaseAppCompatActivity(), NavigationView.OnNavigationItemSel
             // Making status bar overlaps with the activity
             WindowCompat.setDecorFitsSystemWindows(window, false)
         }
+
+        DynamicColors.applyToActivityIfAvailable(this)
     }
 
     private fun setUpViewModel() {

@@ -138,10 +138,10 @@ class AliasCreateFragment : BaseFragment(), HomeActivity.OnBackPressed {
 
     private fun setLoading(loading: Boolean) {
         if (loading) {
-            binding.rootLinearLayout.visibility = View.GONE
+            // binding.rootLinearLayout.visibility = View.GONE
             binding.progressBar.visibility = View.VISIBLE
         } else {
-            binding.rootLinearLayout.visibility = View.VISIBLE
+            // binding.rootLinearLayout.visibility = View.VISIBLE
             binding.progressBar.visibility = View.GONE
         }
     }

@@ -4,8 +4,9 @@
     <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/color_m3_primary</item>
-        <item name="colorSecondary">@color/color_m3_secondary</item>
-        <item name="colorTertiary">@color/color_m3_tertiary</item>
+        <item name="colorOnPrimary">@color/color_m3_on_primary</item>
+        <item name="colorPrimaryContainer">@color/color_m3_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/color_m3_on_primary_container</item>
         <!--
         <item name="colorPrimary">@color/color_m3_primary</item>
         <item name="colorAccent">@color/color_m3_primary</item>
