@@ -13,7 +13,9 @@
 
     <item
         android:id="@+id/howToMenuItem"
-        android:title="💡How to"
+        android:icon="@drawable/ic_outline_help_outline_24"
+        android:title="How to"
+        app:iconTint="@color/color_m3_primary"
         app:showAsAction="ifRoom"
         tools:ignore="HardcodedText" />
 </menu>

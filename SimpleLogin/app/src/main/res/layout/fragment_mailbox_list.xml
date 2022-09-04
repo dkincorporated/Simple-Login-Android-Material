@@ -45,7 +45,7 @@
                         app:layout_collapseMode="pin"
                         app:navigationIcon="@drawable/ic_hamburger"
                         app:title="Mailboxes"
-                        app:menu="@menu/menu_alias_list">
+                        app:menu="@menu/menu_contact_mailbox_list">
 
                     </com.google.android.material.appbar.MaterialToolbar>
                 </com.google.android.material.appbar.CollapsingToolbarLayout>

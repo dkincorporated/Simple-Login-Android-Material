@@ -191,7 +191,7 @@
                     android:layout_margin="24dp"
                     android:backgroundTint="@color/color_m3_primary"
                     app:srcCompat="@drawable/ic_arrow_upward_24dp"
-                    app:tint="@color/colorWhite"
+                    app:tint="@color/color_m3_on_primary"
                     tools:ignore="ContentDescription" />
 
             </androidx.coordinatorlayout.widget.CoordinatorLayout>

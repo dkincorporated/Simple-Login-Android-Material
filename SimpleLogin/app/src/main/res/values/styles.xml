@@ -53,6 +53,11 @@
         <item name="fontFamily">@font/google_sans_text_medium</item>
     </style>
 
+    <style name="AboutCardItemTitleTextAppearance">
+        <item name="fontFamily">@font/google_sans_text_medium</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
     <!--Tab text size-->
     <style name="TabText" parent="TextAppearance.Material3.ActionBar.Title">
         <item name="android:textSize">16sp</item>

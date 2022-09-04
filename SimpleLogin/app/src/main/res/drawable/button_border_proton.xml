@@ -7,8 +7,8 @@
     </item>
     <item android:id="@android:id/background">
         <shape android:shape="rectangle">
-            <corners android:radius="2dp"/>
-            <solid android:color="@color/colorItemBackground"/>
+            <corners android:radius="8dp"/>
+            <solid android:color="@color/colorWhite"/>
             <stroke android:color="@color/protonMain" android:width="2dp"/>
         </shape>
     </item>

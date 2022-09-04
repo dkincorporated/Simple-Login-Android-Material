@@ -30,8 +30,7 @@
                     android:layout_marginBottom="@dimen/margin_4"
                     android:textAppearance="@style/AliasListTitleAppearance"
                     android:textColor="@color/colorText"
-                    tools:text="yautiden@gmail.com"
-                    android:textSize="15.5sp"/>
+                    tools:text="yautiden@gmail.com"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
