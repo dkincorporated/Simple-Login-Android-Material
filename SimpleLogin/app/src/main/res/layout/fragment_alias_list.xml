@@ -33,7 +33,7 @@
                 android:elevation="0dp"
                 app:layout_collapseMode="pin"
                 app:navigationIcon="@drawable/ic_hamburger"
-                app:title="Your aliases"
+                app:title="Aliases"
                 app:menu="@menu/menu_alias_list">
 
             </com.google.android.material.appbar.MaterialToolbar>

@@ -3,32 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-        <RelativeLayout
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/rootCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/card_shape_with_ripple"
-            android:padding="@dimen/margin_4">
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:padding="@dimen/margin_4"
+            app:cardBackgroundColor="@color/color_m3_background_global">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_gravity="center_vertical|start"
-                android:layout_marginEnd="5dp"
                 android:orientation="vertical"
-                android:padding="10dp">
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp">
 
                 <TextView
                     android:id="@+id/emailTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_4"
-                    android:textAppearance="?attr/textAppearanceSubtitle2"
+                    android:textAppearance="@style/AliasListTitleAppearance"
                     android:textColor="@color/colorText"
                     tools:text="yautiden@gmail.com"
                     android:textSize="15.5sp"/>
@@ -37,9 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingStart="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingEnd="5dp">
+                    android:paddingTop="4dp">
 
                     <TextView
                         android:id="@+id/creationDateTextView"
@@ -48,19 +46,35 @@
                         android:layout_gravity="center_vertical"
                         android:layout_weight="1"
                         app:drawableStartCompat="@drawable/ic_clock_16dp"
-                        android:drawablePadding="5dp"
-                        android:textAppearance="?attr/textAppearanceCaption"
+                        android:drawablePadding="4dp"
+                        android:textAppearance="@style/AliasListSubtextAppearance"
                         android:textColor="?attr/colorControlNormal"
                         app:drawableTint="?attr/colorControlNormal"
                         tools:text="Created 5 days ago" />
 
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Default mailbox"
+                        android:id="@+id/defaultTextView"
+                        android:textColor="@color/color_m3_primary"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not verified"
+                        android:id="@+id/notVerifiedTextView"
+                        android:textColor="@color/color_m3_error"
+                        android:layout_marginHorizontal="4dp" />
+
+                    <!--
                     <TextView
                         android:id="@+id/defaultTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="2dp"
                         android:background="@drawable/shape_default_mailbox"
-                        android:paddingHorizontal="5dp"
+                        android:paddingHorizontal="4dp"
                         android:text="Default Mailbox"
                         android:textAppearance="?attr/textAppearanceCaption"
                         android:textColor="@color/colorWhite"
@@ -72,11 +86,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="2dp"
                         android:background="@drawable/shape_not_verified_mailbox"
-                        android:paddingHorizontal="5dp"
+                        android:paddingHorizontal="4dp"
                         android:text="Not verified"
                         android:textAppearance="?attr/textAppearanceCaption"
                         android:textColor="@color/colorWhite"
                         tools:ignore="HardcodedText" />
+                        !-->
                 </LinearLayout>
 
                 <TextView
@@ -85,16 +100,16 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     app:drawableStartCompat="@drawable/ic_wave_16dp"
-                    android:drawablePadding="5dp"
-                    android:paddingStart="5dp"
-                    android:paddingTop="5dp"
-                    android:paddingEnd="5dp"
-                    android:textAppearance="?attr/textAppearanceCaption"
+                    android:drawablePadding="4dp"
+                    android:paddingStart="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="4dp"
+                    android:textAppearance="@style/AliasListSubtextAppearance"
                     android:textColor="?attr/colorControlNormal"
                     app:drawableTint="?attr/colorControlNormal"
                     tools:text="123 aliases" />
 
             </LinearLayout>
-        </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
 
 </layout>

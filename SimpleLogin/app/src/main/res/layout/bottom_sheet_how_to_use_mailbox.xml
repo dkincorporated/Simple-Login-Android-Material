@@ -33,8 +33,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:text="How To Use Mailboxes"
+                android:text="How to use mailboxes"
                 android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
+                android:fontFamily="@font/google_sans_regular"
                 android:textColor="@color/colorText"
                 tools:ignore="HardcodedText" />
 
@@ -44,11 +45,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/toolbar"
-            android:paddingTop="20dp"
             android:paddingStart="20dp"
+            android:paddingTop="20dp"
             android:paddingEnd="20dp"
-            android:textColor="@color/colorText"
-            android:text="@string/how_to_use_mailbox"/>
+            android:fontFamily="@font/google_sans_text_regular"
+            android:text="@string/how_to_use_mailbox"
+            android:textColor="@color/colorText" />
 
         <View
             android:id="@+id/separatorView"

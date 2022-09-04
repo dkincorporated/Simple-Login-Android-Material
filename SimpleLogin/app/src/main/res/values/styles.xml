@@ -21,7 +21,7 @@
     <style name="HeadingSubtextAppearance">
         <item name="fontFamily">@font/google_sans_text_regular</item>
         <item name="android:textColor">?attr/colorControlNormal</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
     <style name="AliasListTitleAppearance">

@@ -96,9 +96,9 @@
                     android:id="@+id/recyclerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorItemBackground"
+                    android:background="@color/color_m3_background_global"
                     android:clipToPadding="false"
-                    android:paddingBottom="50dp"
+                    android:paddingBottom="48dp"
                     tools:listitem="@layout/recycler_item_alias_activity"/>
 
             </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
